@@ -56,7 +56,7 @@ export default function ContactSection() {
     },
   });
 
-  async function onSubmit(values) {
+  async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
 
     // Simulate API call
@@ -81,7 +81,7 @@ export default function ContactSection() {
           </Badge>
           <h2 className="text-4xl font-bold mb-4">Contact Me</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Interested in working together? Let's discuss your project
+            Interested in working together? Let&apos;s discuss your project
           </p>
         </div>
 
@@ -174,8 +174,8 @@ export default function ContactSection() {
               <CardHeader>
                 <CardTitle>Send a Message</CardTitle>
                 <CardDescription>
-                  Fill out the form below and I'll get back to you as soon as
-                  possible
+                  Fill out the form below and I&apos;ll get back to you as soon
+                  as possible
                 </CardDescription>
               </CardHeader>
               <CardContent>

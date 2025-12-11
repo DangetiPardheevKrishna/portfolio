@@ -47,7 +47,11 @@ export const metadata = {
     "Professional portfolio of John Doe - Full Stack Developer & UI/UX Designer",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>

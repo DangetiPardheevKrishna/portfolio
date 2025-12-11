@@ -90,7 +90,7 @@ export default function ProjectsSection() {
     Mobile: [{ id: 4 }],
   };
 
-  const getProjectById = (id) => {
+  const getProjectById = (id: number) => {
     return projects["All"].find((project) => project.id === id);
   };
 
