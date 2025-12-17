@@ -14,6 +14,7 @@ import {
 import { AuroraText } from "../ui/aurora-text";
 import { AnimatedShinyText } from "../ui/animated-shiny-text";
 import { cn } from "@/lib/utils";
+import { Meteors } from "../ui/meteors";
 
 export default function HeroSection() {
   return (
@@ -21,6 +22,7 @@ export default function HeroSection() {
       <div className="container px-4 mx-auto">
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12">
+            <Meteors number={20} />
             {/* Left Column */}
             <div className="flex-shrink-0">
               <div className="relative group">

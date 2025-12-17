@@ -10,6 +10,7 @@ import NavigationSection from "@/components/sections/NavigationSection";
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { Particles } from "@/components/ui/particles";
+import { Meteors } from "@/components/ui/meteors";
 
 export default function Home() {
   const { resolvedTheme } = useTheme();
@@ -29,6 +30,7 @@ export default function Home() {
         color={color}
         refresh
       />
+      <Meteors number={20} />
 
       {/* 🌟 CONTENT */}
       <div className="relative z-10">
