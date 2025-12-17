@@ -41,10 +41,10 @@ export default function NavigationSection() {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-lg bg-primary text-primary-foreground flex items-center justify-center font-bold">
-              JD
+              PK
             </div>
             <div>
-              <span className="font-bold">John Doe</span>
+              <span className="font-bold">Pardheev Krishna</span>
               <Badge variant="outline" className="ml-2 text-xs">
                 Developer
               </Badge>

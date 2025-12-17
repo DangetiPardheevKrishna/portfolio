@@ -30,10 +30,18 @@ export default function FooterSection() {
   };
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+    {
+      icon: Github,
+      href: "https://github.com/DangetiPardheevKrishna",
+      label: "GitHub",
+    },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/pardheev-krishna-370b7b331/",
+      label: "LinkedIn",
+    },
     { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-    { icon: Mail, href: "mailto:hello@johndoe.dev", label: "Email" },
+    { icon: Mail, href: "mailto:pardheevkrishna@gmail.com", label: "Email" },
   ];
 
   return (
@@ -56,10 +64,10 @@ export default function FooterSection() {
           <div className="text-center md:text-left">
             <div className="flex items-center gap-3 mb-2">
               <div className="w-10 h-10 rounded-lg bg-primary text-primary-foreground flex items-center justify-center font-bold">
-                JD
+                PK
               </div>
               <div>
-                <h3 className="text-xl font-bold">John Doe</h3>
+                <h3 className="text-xl font-bold">Pardheev Krishna</h3>
                 <p className="text-sm text-muted-foreground">
                   Full Stack Developer
                 </p>

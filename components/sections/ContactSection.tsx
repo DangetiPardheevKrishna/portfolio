@@ -99,7 +99,9 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold">Email</h4>
-                    <p className="text-muted-foreground">hello@johndoe.dev</p>
+                    <p className="text-muted-foreground">
+                      pardheevkrishna@gmail.com
+                    </p>
                     <p className="text-sm text-muted-foreground">
                       Response within 24 hours
                     </p>
@@ -112,7 +114,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold">Phone</h4>
-                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                    <p className="text-muted-foreground">9676499373</p>
                     <p className="text-sm text-muted-foreground">
                       Mon-Fri, 9AM-6PM PST
                     </p>
@@ -125,9 +127,8 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold">Location</h4>
-                    <p className="text-muted-foreground">San Francisco, CA</p>
-                    <p className="text-sm text-muted-foreground">
-                      Available for remote work
+                    <p className="text-muted-foreground">
+                      Kakinada, Andhra Pradesh
                     </p>
                   </div>
                 </div>

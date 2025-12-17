@@ -2,8 +2,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   Briefcase,
   GraduationCap,
@@ -17,38 +15,29 @@ import {
 
 export default function AboutSkills() {
   const skills = [
-    "React",
+    "React.js",
     "Next.js",
-    "TypeScript",
+    "JavaScript (ES6+)",
     "Node.js",
-    "Python",
+    "Express.js",
     "MongoDB",
-    "PostgreSQL",
-    "AWS",
-    "Docker",
-    "Git",
-    "Figma",
+    "JWT Authentication",
+    "Socket.IO",
+    "Zustand",
     "Tailwind CSS",
+    "DaisyUI",
+    "REST APIs",
+    "Git",
+    "C++",
+    "Data Structures & Algorithms",
   ];
 
   const experiences = [
     {
-      year: "2023 - Present",
-      role: "Senior Developer",
-      company: "TechVision Inc.",
-      location: "San Francisco, CA",
-    },
-    {
-      year: "2022 - 2023",
-      role: "Frontend Engineer",
-      company: "DigitalFlow Agency",
+      year: "Apr 2025 – May 2025",
+      role: "Web Development Intern",
+      company: "Codveda Technologies",
       location: "Remote",
-    },
-    {
-      year: "2021 - 2022",
-      role: "Full Stack Developer",
-      company: "StartUpXYZ",
-      location: "New York, NY",
     },
   ];
 
@@ -61,35 +50,36 @@ export default function AboutSkills() {
           </Badge>
           <h2 className="text-4xl font-bold mb-4">Professional Background</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A dedicated developer with a passion for creating elegant solutions
-            to complex problems
+            Full-stack MERN developer passionate about building scalable,
+            real-time, and user-focused web applications.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Left Column - Bio */}
+          {/* Left Column */}
           <div>
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Heart className="w-5 h-5 text-primary" />
-                  My Philosophy
+                  My Approach
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
                 <p className="text-muted-foreground leading-relaxed">
-                  I believe in the power of clean code, thoughtful design, and
-                  user-centered development. Every project is an opportunity to
-                  learn, grow, and create something meaningful.
+                  I enjoy building full-stack applications that solve real-world
+                  problems, with a strong focus on clean architecture, secure
+                  authentication, and seamless user experience.
                 </p>
 
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-0.5" />
                     <div>
-                      <h4 className="font-semibold">Quality First</h4>
+                      <h4 className="font-semibold">Clean & Secure Code</h4>
                       <p className="text-sm text-muted-foreground">
-                        Never compromise on code quality or user experience
+                        JWT-based authentication, protected routes, and robust
+                        backend APIs
                       </p>
                     </div>
                   </div>
@@ -97,9 +87,9 @@ export default function AboutSkills() {
                   <div className="flex items-start gap-3">
                     <Target className="w-5 h-5 text-blue-500 mt-0.5" />
                     <div>
-                      <h4 className="font-semibold">Problem Solver</h4>
+                      <h4 className="font-semibold">Problem-Oriented</h4>
                       <p className="text-sm text-muted-foreground">
-                        Focus on solving real problems with practical solutions
+                        Focused on solving real user and business problems
                       </p>
                     </div>
                   </div>
@@ -107,9 +97,10 @@ export default function AboutSkills() {
                   <div className="flex items-start gap-3">
                     <Users className="w-5 h-5 text-purple-500 mt-0.5" />
                     <div>
-                      <h4 className="font-semibold">Team Player</h4>
+                      <h4 className="font-semibold">Team Collaboration</h4>
                       <p className="text-sm text-muted-foreground">
-                        Collaborate effectively to achieve common goals
+                        Experience working in remote teams and collaborative
+                        environments
                       </p>
                     </div>
                   </div>
@@ -117,10 +108,10 @@ export default function AboutSkills() {
                   <div className="flex items-start gap-3">
                     <Clock className="w-5 h-5 text-amber-500 mt-0.5" />
                     <div>
-                      <h4 className="font-semibold">Lifelong Learner</h4>
+                      <h4 className="font-semibold">Continuous Learner</h4>
                       <p className="text-sm text-muted-foreground">
-                        Constantly updating skills and exploring new
-                        technologies
+                        Constantly improving skills in MERN stack, GenAI, and
+                        system design
                       </p>
                     </div>
                   </div>
@@ -129,7 +120,7 @@ export default function AboutSkills() {
             </Card>
           </div>
 
-          {/* Right Column - Experience & Skills */}
+          {/* Right Column */}
           <div className="space-y-8">
             <Card>
               <CardHeader>
@@ -188,46 +179,26 @@ export default function AboutSkills() {
           </div>
         </div>
 
-        {/* Education Section */}
+        {/* Education */}
         <div className="mt-16">
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <GraduationCap className="w-5 h-5 text-primary" />
-                Education & Certifications
+                Education
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="space-y-4">
-                  <h4 className="font-semibold">Stanford University</h4>
-                  <p className="text-muted-foreground">BSc Computer Science</p>
-                  <p className="text-sm text-muted-foreground">
-                    2016 - 2020 • GPA: 3.8/4.0
-                  </p>
-                  <p className="text-sm">
-                    Specialized in Software Engineering and Artificial
-                    Intelligence. President of Computer Science Club.
-                  </p>
-                </div>
-
-                <div className="space-y-4">
-                  <h4 className="font-semibold">Certifications</h4>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-green-500" />
-                      AWS Certified Solutions Architect
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-green-500" />
-                      Google UX Design Professional
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-green-500" />
-                      React Advanced Certification
-                    </li>
-                  </ul>
-                </div>
+              <div className="space-y-4">
+                <h4 className="font-semibold">
+                  Indian Institute of Information Technology, Srikakulam
+                </h4>
+                <p className="text-muted-foreground">
+                  B.Tech in Electronics and Communication Engineering
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  2022 – 2026 • CGPA: 7.0
+                </p>
               </div>
             </CardContent>
           </Card>

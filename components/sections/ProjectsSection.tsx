@@ -26,68 +26,73 @@ export default function ProjectsSection() {
     All: [
       {
         id: 1,
-        title: "Enterprise E-Commerce Platform",
+        title: "Doctor Appointment & Teleconsultation Platform",
         description:
-          "Full-featured online marketplace with admin dashboard, payment integration, and inventory management.",
+          "Full-stack doctor appointment system with role-based access, admin analytics, secure authentication, and online payments.",
         category: "Web Application",
-        year: "2023",
-        tags: ["Next.js", "TypeScript", "Stripe", "MongoDB", "Tailwind"],
-        github: "https://github.com",
-        demo: "https://demo.com",
+        year: "2024",
+        tags: [
+          "React",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "JWT",
+          "Razorpay",
+          "Tailwind",
+          "REST API",
+        ],
+        github: "https://github.com/DangetiPardheevKrishna",
+        demo: "https://prescripto-frontend-x53j.onrender.com/",
         featured: true,
       },
       {
         id: 2,
-        title: "Task Management System",
+        title: "Real-Time Chat Application",
         description:
-          "Collaborative project management tool with real-time updates and drag-drop functionality.",
-        category: "SaaS Product",
-        year: "2023",
-        tags: ["React", "Node.js", "Socket.io", "PostgreSQL", "Material-UI"],
-        github: "https://github.com",
-        demo: "https://demo.com",
+          "MERN-based real-time chat app with JWT authentication, Socket.IO messaging, online presence detection, and Zustand state management.",
+        category: "Web Application",
+        year: "2024",
+        tags: ["MERN", "Socket.IO", "JWT", "Zustand", "Tailwind", "DaisyUI"],
+        github: "https://github.com/DangetiPardheevKrishna",
+        demo: "https://mern-chat-app-3rtz.onrender.com/",
         featured: true,
       },
       {
         id: 3,
-        title: "Weather Dashboard",
+        title: "StayFinder (Airbnb-like Booking Platform)",
         description:
-          "Responsive weather application with forecasts, maps, and historical data visualization.",
+          "Full-stack property listing and booking platform with host & user roles, real-time booking approvals, and protected routes.",
         category: "Web Application",
-        year: "2022",
-        tags: ["Vue.js", "Chart.js", "WeatherAPI", "PWA", "Vite"],
-        github: "https://github.com",
-        demo: "https://demo.com",
-        featured: false,
-      },
-      {
-        id: 4,
-        title: "Fitness Tracking App",
-        description:
-          "Mobile application for workout tracking, progress monitoring, and community features.",
-        category: "Mobile App",
-        year: "2022",
-        tags: ["React Native", "Firebase", "Redux", "Expo"],
-        github: "https://github.com",
-        demo: "https://demo.com",
+        year: "2024",
+        tags: [
+          "React",
+          "Node.js",
+          "MongoDB",
+          "JWT",
+          "Socket.IO",
+          "Cookies",
+          "Tailwind",
+        ],
+        github: "https://github.com/DangetiPardheevKrishna",
+        demo: "https://stayfinder-frontend-rkk6.onrender.com",
         featured: true,
       },
       {
-        id: 5,
-        title: "Portfolio Website",
+        id: 4,
+        title: "InterviewPrepAI",
         description:
-          "Modern portfolio with animations, dark mode, and contact form integration.",
-        category: "Website",
-        year: "2024",
-        tags: ["Next.js", "Framer Motion", "ShadCN", "EmailJS"],
-        github: "https://github.com",
-        demo: "https://demo.com",
-        featured: false,
+          "AI-powered interview preparation and application tracking platform with chatbot assistance and dynamic quiz generation.",
+        category: "AI + Web Application",
+        year: "2025",
+        tags: ["React", "Node.js", "MongoDB", "JWT", "Gemini API", "Tailwind"],
+        github: "https://github.com/DangetiPardheevKrishna",
+        demo: "#",
+        featured: true,
       },
     ],
-    Featured: [{ id: 1 }, { id: 2 }, { id: 4 }],
-    "Web Apps": [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 5 }],
-    Mobile: [{ id: 4 }],
+
+    Featured: [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }],
+    "Web Apps": [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }],
   };
 
   const getProjectById = (id: number) => {
@@ -209,38 +214,6 @@ export default function ProjectsSection() {
             </TabsContent>
           ))}
         </Tabs>
-
-        {/* Project Stats */}
-        <Card className="mt-12">
-          <CardContent className="p-8">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-              <div>
-                <div className="text-3xl font-bold text-primary mb-2">50+</div>
-                <div className="text-sm text-muted-foreground">
-                  Projects Completed
-                </div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-primary mb-2">30+</div>
-                <div className="text-sm text-muted-foreground">
-                  Happy Clients
-                </div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-primary mb-2">98%</div>
-                <div className="text-sm text-muted-foreground">
-                  Satisfaction Rate
-                </div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-primary mb-2">100%</div>
-                <div className="text-sm text-muted-foreground">
-                  On-time Delivery
-                </div>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
       </div>
     </section>
   );
