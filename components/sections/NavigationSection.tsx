@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from "next-themes";
+import { AnimatedThemeToggler } from "../ui/animated-theme-toggler";
 
 export default function NavigationSection() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -63,7 +64,9 @@ export default function NavigationSection() {
               </a>
             ))}
 
-            <Button
+            <AnimatedThemeToggler />
+
+            {/* <Button
               variant="outline"
               size="icon"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
@@ -74,7 +77,7 @@ export default function NavigationSection() {
               ) : (
                 <Moon className="h-5 w-5" />
               )}
-            </Button>
+            </Button> */}
 
             <Button size="sm">Get In Touch</Button>
           </div>

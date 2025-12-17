@@ -3,7 +3,17 @@
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { Download, ArrowRight, Mail, MapPin, Calendar } from "lucide-react";
+import {
+  Download,
+  ArrowRight,
+  Mail,
+  MapPin,
+  Calendar,
+  ArrowRightIcon,
+} from "lucide-react";
+import { AuroraText } from "../ui/aurora-text";
+import { AnimatedShinyText } from "../ui/animated-shiny-text";
+import { cn } from "@/lib/utils";
 
 export default function HeroSection() {
   return (
@@ -52,12 +62,19 @@ export default function HeroSection() {
 
             {/* Right Column */}
             <div className="flex-1 text-center lg:text-left">
-              <Badge variant="outline" className="mb-6 px-4 py-1.5">
-                MERN Stack Developer
-              </Badge>
+              {/* <Badge variant="outline" className="mb-6 px-4 py-1.5">
+              
+              </Badge> */}
+
+              <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 mb-6 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+                <span>✨ MERN Stack Developer</span>
+                <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+              </AnimatedShinyText>
 
               <h1 className="text-5xl lg:text-6xl font-bold tracking-tight mb-4">
-                <span className="text-primary">Dangeti Pardheev Krishna</span>
+                <span className="text-primary">
+                  <AuroraText>Dangeti Pardheev Krishna</AuroraText>{" "}
+                </span>
               </h1>
 
               <h2 className="text-2xl lg:text-3xl text-muted-foreground font-medium mb-6">

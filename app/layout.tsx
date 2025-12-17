@@ -42,7 +42,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "John Doe | Full Stack Developer",
+  title: "Pardheev Krishna | Full Stack Developer",
   description:
     "Professional portfolio of John Doe - Full Stack Developer & UI/UX Designer",
 };
