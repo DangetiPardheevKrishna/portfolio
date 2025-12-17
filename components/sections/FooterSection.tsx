@@ -103,7 +103,7 @@ export default function FooterSection() {
           <div className="flex items-center gap-2 text-muted-foreground text-sm">
             <Copyright className="w-4 h-4" />
             <span>
-              {new Date().getFullYear()} John Doe. All rights reserved.
+              {new Date().getFullYear()} Pardheev Krishna. All rights reserved.
             </span>
           </div>
 
