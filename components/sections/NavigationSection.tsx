@@ -32,7 +32,7 @@ export default function NavigationSection() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+        isScrolled || isMobileMenuOpen
           ? `
         bg-background/70
         backdrop-blur-xl
@@ -104,7 +104,7 @@ export default function NavigationSection() {
                 <Moon className="h-5 w-5" />
               )}
             </Button> */}
-
+            <AnimatedThemeToggler />
             <Button
               variant="outline"
               size="icon"
