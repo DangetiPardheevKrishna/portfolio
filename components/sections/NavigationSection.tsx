@@ -33,8 +33,16 @@ export default function NavigationSection() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-background/95 backdrop-blur-sm border-b shadow-sm"
-          : "bg-transparent"
+          ? `
+        bg-background/70
+        backdrop-blur-xl
+        backdrop-saturate-150
+        border-b border-white/10 dark:border-white/5
+        shadow-[0_8px_30px_rgb(0,0,0,0.12)]
+      `
+          : `
+        bg-transparent
+      `
       }`}
     >
       <div className="container px-4 mx-auto">
@@ -84,7 +92,7 @@ export default function NavigationSection() {
 
           {/* Mobile Menu Button */}
           <div className="flex items-center gap-4 md:hidden">
-            <Button
+            {/* <Button
               variant="outline"
               size="icon"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
@@ -95,7 +103,7 @@ export default function NavigationSection() {
               ) : (
                 <Moon className="h-5 w-5" />
               )}
-            </Button>
+            </Button> */}
 
             <Button
               variant="outline"

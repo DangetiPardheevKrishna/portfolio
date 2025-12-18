@@ -22,7 +22,7 @@ export default function HeroSection() {
       <div className="container px-4 mx-auto">
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12">
-            <Meteors number={20} />
+            {/* <Meteors number={20} /> */}
             {/* Left Column */}
             <div className="flex-shrink-0">
               <div className="relative group">
@@ -38,11 +38,11 @@ export default function HeroSection() {
                   </AvatarFallback>
                 </Avatar>
 
-                <div className="absolute bottom-4 right-4">
+                {/* <div className="absolute bottom-4 right-4">
                   <Badge className="bg-green-500 hover:bg-green-600 text-white border-none shadow-lg">
                     Open to Opportunities
                   </Badge>
-                </div>
+                </div> */}
               </div>
 
               {/* Quick Info */}
