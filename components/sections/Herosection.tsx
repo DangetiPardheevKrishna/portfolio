@@ -114,12 +114,17 @@ export default function HeroSection() {
 
               {/* CTA */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href="/Dangeti_Pardheev_Krishna_Resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button size="lg" className="gap-2">
+                <a>
+                  <Button
+                    size="lg"
+                    className="gap-2"
+                    onClick={() =>
+                      window.open(
+                        "https://drive.google.com/file/d/1NfTFPGNO38ZHXJ-YTFRtAvnnkR6_7yuR/view?usp=sharing",
+                        "_blank",
+                      )
+                    }
+                  >
                     Download Resume
                   </Button>
                 </a>
