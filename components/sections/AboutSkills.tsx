@@ -605,9 +605,7 @@ export default function AboutSkills() {
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
-                <h4 className="font-semibold">
-                  Indian Institute of Information Technology, Srikakulam
-                </h4>
+                <h4 className="font-semibold">RGUKT , Srikakulam</h4>
                 <p className="text-muted-foreground">
                   B.Tech in Electronics and Communication Engineering
                 </p>
